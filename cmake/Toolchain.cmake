@@ -54,8 +54,8 @@ if(CROSS)
   string(REGEX MATCH ".*linux.*" match_linux "${CROSS}")
   if(match_linux)
     set(CMAKE_SYSTEM_NAME Linux)
-    set(CMAKE_C_COMPILER "${CROSS}-gcc")
-    set(CMAKE_CXX_COMPILER "${CROSS}-g++")
+    set(CMAKE_C_COMPILER "${CROSS}-gcc-4.9")
+    set(CMAKE_CXX_COMPILER "${CROSS}-g++-4.9")
   endif(match_linux)
 
   # RTEMS toolchain.
